@@ -1,5 +1,7 @@
 # Voting Smart Contract Lab-Manual DApp
 
+## Live Deployment
+🌍 **[View Live IPFS DApp on Pinata Gateway](https://blush-selected-moth-706.mypinata.cloud/ipfs/bafybeigybooulvxsjcqtcxhdm5zryy3g4rfgrtikbhvsvm2ns677rq4tdi/)**
 A decentralized voting application built with Solidity, Web3.js, and Truffle.
 
 ## Project Structure
