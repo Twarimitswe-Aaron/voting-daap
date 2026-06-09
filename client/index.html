@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>A Simple Voting DApp</title>
-    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+    <script src="web3.min.js"></script>
     <style>
         body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
         .qa-section { margin-top: 40px; padding: 20px; background-color: #f9f9f9; border-radius: 8px; }
@@ -20,8 +20,8 @@
     <p id="account">Not connected</p>
     <ul id="candidates"></ul>
     <input type="text" placeholder="Enter Candidate Name" id="candidateInput" />
-    <button onclick="connectMetaMask()">Connect MetaMask</button>
-    <button onclick="addCandidate()">Add Candidate</button>
+    <button id="connectBtn">Connect MetaMask</button>
+    <button id="addCandidateBtn">Add Candidate</button>
 
     <script src="app.js"></script>
 

@@ -1,11 +1,12 @@
-const contractAddress = "YOUR_CONTRACT_ADDRESS"; // Replace this after deployment
+const contractAddress = "0x4a401B65C801F916D802458191EEfC97a5Aa0105"; // Replace this after deployment
 let contractABI;
 let web3;
 let votingContract;
 
+
 async function loadABI() {
     try {
-        const response = await fetch('../build/contracts/Voting.json');
+        const response = await fetch('./Voting.json');
         const data = await response.json();
         contractABI = data.abi; // Extracted ABI array from the JSON
     } catch (err) {
@@ -69,3 +70,8 @@ async function vote(contract, account, candidateId) {
 async function addCandidate() {
     alert("The addCandidate function in the smart contract is marked as private and cannot be called from the frontend. See Q&A for how to fix this!");
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('connectBtn').addEventListener('click', connectMetaMask);
+    document.getElementById('addCandidateBtn').addEventListener('click', addCandidate);
+});
