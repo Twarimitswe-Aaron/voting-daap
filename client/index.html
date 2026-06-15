@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A Simple Voting DApp</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -23,7 +24,8 @@
     <ul id="candidates"></ul>
     <input type="text" placeholder="Enter Candidate Name" id="candidateInput" />
     <button id="connectBtn">Connect MetaMask</button>
-    <button id="addCandidateBtn">Add Candidate</button>
+    <button id="addCandidateBtn" title="addCandidate() is private in the contract — see console for details"
+        style="opacity:0.45; cursor:not-allowed; background:#aaa;">Add Candidate (Disabled)</button>
 
     <script src="app.js"></script>
 
